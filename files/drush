@@ -1,11 +1,3 @@
-#!/bin/bash
-version=$(git config --get drush.version)
-if [ "$version" = '8' ];
-then
-    drush8 "$@"
-elif [ "$version" = '7' ];
-  then
-  drush7 "$@"
-else
-    drush7 "$@"
-fi
+#!/bin/sh
+export DRUSH_LAUNCHER_FALLBACK=/usr/local/bin/drush7
+/usr/local/bin/drush-launcher $@
