@@ -38,7 +38,7 @@
   git:
     repo=https://github.com/backdrop-contrib/drush.git
     dest="/usr/local/src/drush8/commands/backdrop"
-    version=1.x-0.x
+    version=1.x-1.x
   when: backdrop
   tags: [drush,backdrop]
 
